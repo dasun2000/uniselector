@@ -25,21 +25,28 @@ class _AddUniversityScreenState extends State<AddUniversityScreen> {
   String _type = 'Government';
 
   void _submit() async {
+    final name = _nameController.text.trim();
+
     final data = {
-      'name': _nameController.text,
-      'location': _locationController.text,
-      'description': _descriptionController.text,
+      'name': name,
+      'searchName': name.toLowerCase(), // ✅ Added for case-insensitive search
+      'location': _locationController.text.trim(),
+      'description': _descriptionController.text.trim(),
       'type': _type,
       'imageUrls': [
-        _image1Controller.text,
-        _image2Controller.text,
-        _image3Controller.text,
+        _image1Controller.text.trim(),
+        _image2Controller.text.trim(),
+        _image3Controller.text.trim(),
       ],
       'degrees': [
         {
-          'name': _degreeController.text,
-          'field': _fieldController.text,
-          'careerPaths': _careerPathsController.text.split(','),
+          'name': _degreeController.text.trim(),
+          'field': _fieldController.text.trim(),
+          'careerPaths': _careerPathsController.text
+              .split(',')
+              .map((e) => e.trim())
+              .where((e) => e.isNotEmpty)
+              .toList(),
           'zScores': {
             '2023': double.tryParse(_zscore2023Controller.text),
             '2022': double.tryParse(_zscore2022Controller.text),
@@ -49,7 +56,9 @@ class _AddUniversityScreenState extends State<AddUniversityScreen> {
     };
 
     await FirebaseFirestore.instance.collection('universities').add(data);
-    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('University Added')));
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('University Added')),
+    );
     _formKey.currentState?.reset();
   }
 
