@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "825120361044",
+    "project_id": "univision-01",
+    "storage_bucket": "univision-01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825120361044:android:8730e49e0fe5c99e39bbc1",
+        "android_client_info": {
+          "package_name": "com.example.uni_selector"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6jsM3Gqp8hCEOFHw8YD1Qt-UkQqSySjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
