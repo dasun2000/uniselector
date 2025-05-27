@@ -35,7 +35,7 @@ class _SearchScreenState extends State<SearchScreen> {
   University? _selectedUniversity;
   bool _isSearching = false;
 
-  // Sri Lankan universities data with updated image URLs
+  
   final List<University> _universities = [
     University(
       name: 'University of Colombo',
@@ -333,27 +333,9 @@ class _SearchScreenState extends State<SearchScreen> {
                 ),
                 const SizedBox(height: 24),
 
-                // Filter Section
-                const Text(
-                  'Filter By Type',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blueAccent,
-                  ),
-                ),
+                
                 const SizedBox(height: 12),
-                Row(
-                  children: [
-                    Expanded(
-                      child: _buildTypeFilter('Government'),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: _buildTypeFilter('Private'),
-                    ),
-                  ],
-                ),
+                
               ],
             ],
           ),
