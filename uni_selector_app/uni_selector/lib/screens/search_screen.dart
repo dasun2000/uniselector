@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-// University model
+
 class University {
   final String name;
-  final String type; // 'Government' or 'Private'
+  final String type; 
   final String location;
   final String description;
   final List<String> images;
@@ -45,8 +45,8 @@ class _SearchScreenState extends State<SearchScreen> {
       website: 'https://cmb.ac.lk/',
       description: 'The University of Colombo is a public research university located primarily in Colombo, Sri Lanka. It is the oldest institution of modern higher education in Sri Lanka.',
       images: [
-        'https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        'https://www.studyinsrilanka.org/wp-content/uploads/2015/01/UoC_nameboard.jpg',
+        'https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.ft.lk/assets/uploads/image_2430015340.jpg',
       ],
       faculties: [
         'Faculty of Arts',
@@ -64,9 +64,9 @@ class _SearchScreenState extends State<SearchScreen> {
       website: 'https://www.pdn.ac.lk/',
       description: 'The University of Peradeniya is a public university in Sri Lanka, funded by the University Grants Commission. It is the largest university in Sri Lanka by area.',
       images: [
-        'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        'https://rasakatha.lk/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-18-at-2.54.14-PM-1.jpeg',
+        'https://island.lk/wp-content/uploads/2024/07/Peradeniya.jpg',
+        'https://www.attractionsinsrilanka.com/wp-content/uploads/2019/07/University-of-Peradeniya.jpg',
       ],
       faculties: [
         'Faculty of Arts',
@@ -84,9 +84,9 @@ class _SearchScreenState extends State<SearchScreen> {
       website: 'https://uom.lk/',
       description: 'The University of Moratuwa is a public university in Sri Lanka. It is most renowned for its engineering degrees, especially in the fields of civil, mechanical, electrical and computer engineering.',
       images: [
-        'https://images.unsplash.com/photo-1576495199011-eb94736d05d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        'https://www.yesman.lk/assets/img/institutes/uom_cover-1557562542.jpg',
+        'https://uom.lk/sites/default/files/Faculty/Business/slideshow/1.jpg',
+        'https://adaderanaenglish.s3.amazonaws.com/1595500106-Medical-faculty-to-be-established-at-Moratuwa-University-L.jpg',
       ],
       faculties: [
         'Faculty of Architecture',
@@ -95,16 +95,16 @@ class _SearchScreenState extends State<SearchScreen> {
       ],
     ),
     University(
-      name: 'Sri Lanka Institute of Information Technology (SLIIT)',
+      name: 'SLIIT University',
       type: 'Private',
       location: 'Malabe, Sri Lanka',
       establishedYear: '1999',
       website: 'https://www.sliit.lk/',
       description: 'SLIIT is the largest degree awarding institute in Sri Lanka recognized by the University Grants Commission under the Universities Act. It offers degrees in IT, Business, Engineering and more.',
       images: [
-        'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        'https://static.sliit.lk/wp-content/uploads/2018/03/slit-a.2.jpg',
+        'https://static.sliit.lk/wp-content/uploads/2022/06/25130337/The-Inauguration-Ceremony-for-the-new-batch-of-University-of-Queensland-Programmes-at-SLIIT-7.jpg',
+        'https://static.sliit.lk/wp-content/uploads/2023/07/07114655/Jaffna-Welcomes-SLIIT-Northern-Unis-State-of-the-Art-Campus-A-New-Chapter-in-Higher-Education-1.jpg',
       ],
       faculties: [
         'Faculty of Computing',
@@ -122,8 +122,8 @@ class _SearchScreenState extends State<SearchScreen> {
       description: 'NSBM Green University is Sri Lankas first green university and the first government-owned private university. It offers degrees in Management, Computing, Engineering and more.',
       images: [
         'https://educationdesign.com/wp-content/uploads/2023/07/Thumb.jpg',
-        'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        'https://static.brandfinance.com/wp-content/uploads/2023/09/NSBM-A4-1600x1200.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/4/4d/NSBM_Green_University_Sri_Lanka.jpg',
       ],
       faculties: [
         'Faculty of Business',
@@ -140,9 +140,9 @@ class _SearchScreenState extends State<SearchScreen> {
       website: 'https://www.kln.ac.lk/',
       description: 'The University of Kelaniya is a public university in Sri Lanka. It has a strong reputation for humanities, social sciences and medicine.',
       images: [
-        'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        'https://units.kln.ac.lk/qac/images/2021/11/08/8b8703b3-0d6387aa-kelaniya-uni-_850x460_acf_cropped.jpg',
+        'https://cdce.kln.ac.lk/images/2022/11/02/fom_ot_edit.png',
+        'https://fcms.kln.ac.lk/edu/mcom/images/2023/09/18/slide-c6s.jpg',
       ],
       faculties: [
         'Faculty of Humanities',
@@ -159,9 +159,9 @@ class _SearchScreenState extends State<SearchScreen> {
       website: 'https://www.iit.ac.lk/',
       description: 'IIT is a leading higher education institute in Sri Lanka offering British degrees in IT, Business and Engineering in collaboration with top UK universities.',
       images: [
-        'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        'https://www.iit.ac.lk/wp-content/uploads/2022/08/hostory.jpg',
+        'https://www.iit.ac.lk/wp-content/uploads/2022/08/ezgif.com-gif-maker-69.jpg',
+        'https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.ft.lk/assets/uploads/image_47b54eeb39.jpg',
       ],
       faculties: [
         'School of Computing',
@@ -231,7 +231,7 @@ class _SearchScreenState extends State<SearchScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Search Card
+              
               Card(
                 elevation: 4,
                 shape: RoundedRectangleBorder(
