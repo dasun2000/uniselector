@@ -2,10 +2,10 @@ plugins {
     id("com.android.application")
     id("kotlin-android")
 
-    // ✅ Google Services plugin (needed for Firebase)
+    
     id("com.google.gms.google-services")
 
-    // ✅ Flutter plugin (MUST be last)
+    
     id("dev.flutter.flutter-gradle-plugin")
 }
 

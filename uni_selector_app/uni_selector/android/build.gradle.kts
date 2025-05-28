@@ -1,7 +1,7 @@
 plugins {
-    // Other root-level plugins (if any)
+    
 
-    // ✅ Google Services plugin
+    
     id("com.google.gms.google-services") version "4.4.2" apply false
 }
 
