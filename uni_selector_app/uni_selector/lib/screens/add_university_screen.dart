@@ -16,30 +16,40 @@ class _AddUniversityScreenState extends State<AddUniversityScreen> {
   final _image1Controller = TextEditingController();
   final _image2Controller = TextEditingController();
   final _image3Controller = TextEditingController();
-  
+  final _degreeController = TextEditingController();
+  final _fieldController = TextEditingController();
+  final _careerPathsController = TextEditingController();
+  final _zscore2023Controller = TextEditingController();
+  final _zscore2022Controller = TextEditingController();
 
   String _type = 'Government';
 
   void _submit() async {
-    final name = _nameController.text.trim();
-
     final data = {
-      'name': name,
-      'searchName': name.toLowerCase(), // ✅ Added for case-insensitive search
-      'location': _locationController.text.trim(),
-      'description': _descriptionController.text.trim(),
+      'name': _nameController.text,
+      'location': _locationController.text,
+      'description': _descriptionController.text,
       'type': _type,
       'imageUrls': [
-        _image1Controller.text.trim(),
-        _image2Controller.text.trim(),
-        _image3Controller.text.trim(),
+        _image1Controller.text,
+        _image2Controller.text,
+        _image3Controller.text,
+      ],
+      'degrees': [
+        {
+          'name': _degreeController.text,
+          'field': _fieldController.text,
+          'careerPaths': _careerPathsController.text.split(','),
+          'zScores': {
+            '2023': double.tryParse(_zscore2023Controller.text),
+            '2022': double.tryParse(_zscore2022Controller.text),
+          }
+        }
       ]
     };
 
     await FirebaseFirestore.instance.collection('universities').add(data);
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('University Added')),
-    );
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('University Added')));
     _formKey.currentState?.reset();
   }
 
@@ -68,7 +78,11 @@ class _AddUniversityScreenState extends State<AddUniversityScreen> {
               TextFormField(controller: _image1Controller, decoration: const InputDecoration(labelText: 'Image 1 URL')),
               TextFormField(controller: _image2Controller, decoration: const InputDecoration(labelText: 'Image 2 URL')),
               TextFormField(controller: _image3Controller, decoration: const InputDecoration(labelText: 'Image 3 URL')),
-              
+              TextFormField(controller: _degreeController, decoration: const InputDecoration(labelText: 'Degree Name')),
+              TextFormField(controller: _fieldController, decoration: const InputDecoration(labelText: 'Field')),
+              TextFormField(controller: _careerPathsController, decoration: const InputDecoration(labelText: 'Career Paths (comma separated)')),
+              TextFormField(controller: _zscore2023Controller, decoration: const InputDecoration(labelText: 'Z-Score 2023')),
+              TextFormField(controller: _zscore2022Controller, decoration: const InputDecoration(labelText: 'Z-Score 2022')),
               const SizedBox(height: 20),
               ElevatedButton(onPressed: _submit, child: const Text('Add University')),
             ],
