@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'screens/main_navigation.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:uni_selector/screens/main_navigation.dart';
 
-
-void main() => runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'UNIVISION',
+      title: 'University Finder',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
