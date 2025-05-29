@@ -35,7 +35,7 @@ class _ZScoreScreenState extends State<ZScoreScreen> {
     }
 
     try {
-      // Try the optimized query first
+      
       final querySnapshot = await FirebaseFirestore.instance
           .collection('degree')
           .where('district', isEqualTo: _selectedDistrict)
@@ -50,7 +50,7 @@ class _ZScoreScreenState extends State<ZScoreScreen> {
     } catch (e) {
       debugPrint('Optimized query failed, falling back to local filter: $e');
       
-      // Fallback to local filtering if the index isn't ready
+      
       try {
         setState(() {
           _usingLocalFilter = true;

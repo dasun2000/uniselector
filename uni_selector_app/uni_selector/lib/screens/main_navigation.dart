@@ -7,7 +7,7 @@ import 'degrees_screen.dart';
 import 'careers_screen.dart';
 import 'search_screen.dart' show SearchScreen;
 import 'university_detail_screen.dart' show UniversityDetailScreen;
-import 'admin_login_screen.dart'; // <-- Import your AdminLoginScreen here
+import 'admin_login_screen.dart'; 
 
 class MainNavigation extends StatefulWidget {
   const MainNavigation({super.key});
@@ -131,7 +131,7 @@ class _MainNavigationState extends State<MainNavigation> {
         }
 
         if (snapshot.hasError || !snapshot.hasData || snapshot.data!.isEmpty) {
-          return const SizedBox(); // empty if no data
+          return const SizedBox(); 
         }
 
         final universities = snapshot.data!;

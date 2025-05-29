@@ -68,7 +68,7 @@ class _DegreeScreenState extends State<DegreeScreen> {
                 ),
                 const SizedBox(height: 32),
 
-                // Search Box
+                
                 Card(
                   elevation: 4,
                   shape: RoundedRectangleBorder(
@@ -93,7 +93,7 @@ class _DegreeScreenState extends State<DegreeScreen> {
                 ),
                 const SizedBox(height: 24),
 
-                // Field of Study
+                
                 Card(
                   elevation: 4,
                   shape: RoundedRectangleBorder(
@@ -146,7 +146,7 @@ class _DegreeScreenState extends State<DegreeScreen> {
                 ),
                 const SizedBox(height: 32),
 
-                // Find Degrees Button
+                
                 AnimatedContainer(
                   duration: const Duration(milliseconds: 300),
                   height: 56,

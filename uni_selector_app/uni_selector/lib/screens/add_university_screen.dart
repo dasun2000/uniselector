@@ -25,7 +25,7 @@ class _AddUniversityScreenState extends State<AddUniversityScreen> {
 
     final data = {
       'name': name,
-      'searchName': name.toLowerCase(), // ✅ Added for case-insensitive search
+      'searchName': name.toLowerCase(), 
       'location': _locationController.text.trim(),
       'description': _descriptionController.text.trim(),
       'type': _type,

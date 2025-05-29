@@ -274,11 +274,11 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
               const SizedBox(height: 24),
 
-              // University Details Section
+              
               if (_selectedUniversity != null) ...[
                 _buildUniversityDetails(_selectedUniversity!),
               ] else ...[
-                // Stats Section
+                
                 const Text(
                   'Sri Lankan University Stats',
                   style: TextStyle(
@@ -307,7 +307,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 ),
                 const SizedBox(height: 24),
 
-                // Popular Universities Section
+                
                 const Text(
                   'Popular Universities',
                   style: TextStyle(
@@ -374,7 +374,7 @@ class _SearchScreenState extends State<SearchScreen> {
             ),
             const SizedBox(height: 16),
             
-            // University Info Card
+            
             Card(
               elevation: 6,
               shape: RoundedRectangleBorder(
@@ -514,7 +514,7 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ),
             
-            // Images Section
+            
             if (university.images.isNotEmpty) ...[
               const SizedBox(height: 20),
               Text(
@@ -576,7 +576,7 @@ class _SearchScreenState extends State<SearchScreen> {
             ],
             
             const SizedBox(height: 20),
-            // View Details Button
+            
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -755,7 +755,7 @@ class UniversityDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // University Header Card
+            
             Card(
               elevation: 8,
               shape: RoundedRectangleBorder(
@@ -862,7 +862,7 @@ class UniversityDetailScreen extends StatelessWidget {
             
             const SizedBox(height: 20),
             
-            // Description Section
+            
             Card(
               elevation: 4,
               shape: RoundedRectangleBorder(
@@ -901,7 +901,7 @@ class UniversityDetailScreen extends StatelessWidget {
               ),
             ),
             
-            // Faculties Section
+            
             if (university.faculties != null && university.faculties!.isNotEmpty) ...[
               const SizedBox(height: 20),
               Card(
@@ -952,7 +952,7 @@ class UniversityDetailScreen extends StatelessWidget {
             
             const SizedBox(height: 20),
             
-            // Images Section
+            
             if (university.images.isNotEmpty) ...[
               Card(
                 elevation: 4,

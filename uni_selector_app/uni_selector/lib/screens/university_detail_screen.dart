@@ -22,7 +22,7 @@ class UniversityDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Top Image (first one)
+            
             if (imageUrls != null && imageUrls.isNotEmpty)
               ClipRRect(
                 borderRadius: BorderRadius.circular(12),
@@ -38,7 +38,7 @@ class UniversityDetailScreen extends StatelessWidget {
 
             const SizedBox(height: 25),
 
-            // University Name
+            
             Text(
               university['name'] ?? 'No Name Available',
               style: const TextStyle(
@@ -49,7 +49,7 @@ class UniversityDetailScreen extends StatelessWidget {
 
             const SizedBox(height: 10),
 
-            // Location and Type Row
+            
             Row(
               children: [
                 Icon(Icons.location_on, color: Colors.blue[700]),
@@ -76,7 +76,7 @@ class UniversityDetailScreen extends StatelessWidget {
 
             const Divider(height: 30, thickness: 1),
 
-            // Description Section
+            
             const Text(
               'About',
               style: TextStyle(
@@ -95,7 +95,7 @@ class UniversityDetailScreen extends StatelessWidget {
 
             const Divider(height: 30, thickness: 1),
 
-            // Additional Images (2nd and 3rd)
+            
             if (imageUrls != null && imageUrls.length > 1)
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
